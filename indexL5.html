@@ -5,7 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade15/02/23</title>
-</head>
+    <style>
+      body {
+        background-color:#3e7fbd ;
+      }
+      
+      h1 {
+        color: black;
+        text-align: center;
+        font-size: 50px;        
+      }
+      
+      p {
+        font-family: verdana;
+        font-size: 20px;
+      }
+      
+      </style>
+  </head>
 <body>
    <h1> Topologia de Rede</h1> 
 <h2>Topologia</h2>
@@ -68,7 +85,53 @@
   <li>Agilidade de reconhecimento nas falhas que possa ocorrer na rede.</li>
 </ul>
 <h2>Desvantagens</h2>
-<p>Alto custo de implantação.</p>
+<ul>
+  <li>Alto custo na implantação</li>
+</ul>
+ 
+<h1>IPV4,Mascara de Rede e Gateway</h1>
+
+<h2>Introdução</h2>
+
+<p>Para obtter a cominucação ente os hosts da minha rede, precisa se da parte fisica(topologia cabeamento) para que a rede tenha a possibilidade de ter uma comunicação entre os hosts, porem necessita ter a configuração logica, sem esses fatores não é possivel estabelecer uma comunicação entre os hosts da rede.</p>
+<h2> O que é IPV4</h2>
+
+<img src="ipv4.jpg" width="400" height="300">
+
+<p>O protocolo ipv4, ou protocolo, esse protocolo permite que os hosts trafeguem na internet, todo host que estiver conectado terá um código que permite enviar e receber informações de outros hosts que estão conectados na rede.
+  Endereços IP, o IPV4 é formado por 04 blocos de 8 bits, estes são exibidos por números de 0 a 255.
+  Os endereços IPV4 que iniciam com “192.168”, com 10 ou com 172.16 até 172.31, estes os códigos poupados para redes locais, portanto não são utilizados na internet.</p>
+  <h2>O que é Mascara de Rede?</h2>
+
+<p>Podemos imaginar a máscara de rede como um bairro que possui várias casas (IPs). Os IPs que utilizam uma determinada classe, pertence a aquela classe, da mesma forma que se uma casa (IP), está presente no bairro que seria a máscara de rede, pertencendo a mesma forma, sendo que cada IP corresponde a uma máscara de rede.</p>
+
+<ul>
+  <li><b>Classe A:</b>10.0.0.0 até 10.225.255.255 (255.0.0.0) - Utiliza apenas o primeiro octeto do IP quefica exclusivo para a máscara de rede e o restante para os hosts
+    (11111111.00000000.00000000.00000000).</li>
+<li><b>Classe B:</b>172.16.0.0 até 172.31.255.255 (255.255.0.0) - Utiliza os dois primeiros octetos do IP
+  que fica exclusivo para a máscara de rede e o restante para os hosts
+  (11111111.11111111.00000000.00000000).</li>
+  <li><b>Classe C:</b> 192.168.0.0 até 192.168.0.0 (255.255.255.0) - Utiliza os três primeiros octetos do IP
+    que fica exclusivo para a máscara de rede e o restante para os hosts
+    (11111111.11111111.11111111.00000000).</li>
+  
+  </ul>
+
+<img src="imagi.png" width="500" height="300">
+
+<h2>O que é gateway?</h2>
+
+<p>Gateway é um aplicativo de rede que se depara com duas redes. Podendo traduzir o termo gaateway como um portão, é assim que essa tecnologia funciona, ele é um portão que libera o acesso ou não das outras redes. Liberando a passagem dos dados entre hosts como: Tablet, telefone, computador, notebook entre outros. Pode ser instalado verificando a segurança dos dados do computador ate a internet. Como se fosse um portal que libera o acesso para o mundo externo, ele isola a rede domestica com a internet.</p>
+
+<img src="gateway.jpg" width="400" height="300">
+
+
+
+
+
+
+
+
 
 
 </body>
